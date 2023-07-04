@@ -1,41 +1,36 @@
 import React from "react";
-import { useState ,useEffect} from "react";
-import { Link } from "react-router-dom";
-import { Col,Row ,Container, Carousel} from "react-bootstrap";
-import colorSharp from "../assets/img/color-sharp.png";
+
+import { Col,Row ,Container} from "react-bootstrap";
+import meter1 from "../assets/img/meter1.svg";
+import meter2 from "../assets/img/meter2.svg";
+import meter3 from "../assets/img/meter3.svg";
+// import colorSharp from "../assets/img/color-sharp.png";
+
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import '../styles/slider.css'
 const Slider = () => {
     const item  = [
         {
             id:1,
-            img:'https://picsum.photos/200/300',
+            img: meter1,
             title:'Web Design',
-            desc:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+         
         },
         {
             id:2,
-            img:'https://picsum.photos/200/300',
+            img:meter2,
             title:'Web Design',
-            desc:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+           
         },
         {
             id:3,
-            img:'https://picsum.photos/200/300',
+            img:meter3,
             title:'Web Design',
-            desc:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+        
         },
-        {
-            id:4,
-            img:'https://picsum.photos/200/300',
-            title:'Web Design',
-            desc:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
-        },
-        {
-            id:5,
-            img:'https://picsum.photos/200/300',
-            title:'Web Design',
-            desc:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
-        }
+       
+        
     ]
 
     const responsive = {
@@ -64,7 +59,7 @@ const Slider = () => {
                         <Col>
                             <div className="skill-bx">
                                 <h2>
-                                    Skill
+                                    SKILL
                                 </h2>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia ratione ipsam itaque voluptatum explicabo omnis eligendi! Doloribus dicta ipsa accusamus soluta deserunt qui veniam eligendi cumque excepturi. Corporis, doloremque ea? </p>
                                 <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
@@ -75,7 +70,7 @@ const Slider = () => {
                                                     <div className="item" key={ind}>
                                                         <img src={val.img} alt="" />
                                                         <h3>{val.title}</h3>
-                                                        <p>{val.desc}</p>
+                                                        
                                                     </div>
                                                 )
                                             }
