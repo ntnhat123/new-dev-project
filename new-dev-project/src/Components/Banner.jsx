@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 import { useState } from "react";
 import '../styles/banner.css'
+// import TrackVisibility from 'react-on-screen';
+import 'animate.css'
 const Banner = () => {
     let [loopNum ,setLoopNum]=useState(0);
     let [isDeleting, setIsDeleting] = useState(false);
@@ -44,13 +46,17 @@ const Banner = () => {
                 <Container>
                     <Row className="aligh-items-center">
                         <Col md={6} xl={7}>
-                            <span className="subheading">Hello, I am</span>
-                            <h1>{`Hi I'm webdecoded ` } <span className="wrap">
-                                {txt}
-                    
-                                </span></h1>
-                            <p>I'm a web developer. I spend my whole day, practically every day, experimenting with HTML, CSS, and JavaScript; dabbling with Python and Ruby; and inhaling a wide variety of potentially useless information through a few hundred RSS feeds. I build websites that delight and inform. I do it well.</p>
-                            <button onClick={() => console.log("connect")}>Let's connect <FontAwesomeIcon className="faArrowRight" icon={faArrowRight} beat /></button>
+                            
+
+                                    <span className="subheading">Hello, I am</span>
+                                    <h1>{`Hi I'm webdecoded ` } <span className="wrap">
+                                        {txt}
+                            
+                                        </span></h1>
+                                    <p>I'm a web developer. I spend my whole day, practically every day, experimenting with HTML, CSS, and JavaScript; dabbling with Python and Ruby; and inhaling a wide variety of potentially useless information through a few hundred RSS feeds. I build websites that delight and inform. I do it well.</p>
+                                    <button onClick={() => console.log("connect")}>Let's connect <FontAwesomeIcon className="faArrowRight" icon={faArrowRight} beat /></button>
+                               
+                            
                         </Col>
                         <Col md={6} xl={5}>
                             <img src={headerImg} alt="Heder img" />

@@ -7,6 +7,7 @@ import Banner from './Components/Banner';
 import Slider from './Components/Slider';
 import Project from './Components/Project';
 import Contact from './Components/Contact';
+import Footer from './Components/Footer';
 function App() {
   return (
     <div className="App">
@@ -16,6 +17,7 @@ function App() {
         <Slider/>
         <Project/>
         <Contact/>
+        <Footer />
       </BrowserRouter>
    
 

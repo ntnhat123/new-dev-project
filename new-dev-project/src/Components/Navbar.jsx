@@ -34,10 +34,10 @@ const NavBar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto" >
-                        <Nav.Link as={Link} to="/" onClick={() => setActive("Home")} className={active === "Home" ? "active" : ""}>Home</Nav.Link>
-                        <Nav.Link as={Link} to="/about" onClick={() => setActive("About")} className={active === "About" ? "active" : ""}>About</Nav.Link>
-                        <Nav.Link as={Link} to="/contact" onClick={() => setActive("Contact")} className={active === "Contact" ? "active" : ""}>Contact</Nav.Link>
+                    <Nav className="me-auto " >
+                        <Nav.Link as={Link} to="/"  onClick={() => setActive("Home")} className={active === "Home" ? "active" : "" }>Home</Nav.Link>
+                        <Nav.Link as={Link} to="/slider" onClick={() => setActive("Slider")} className={active === "Slider" ? "active" : ""}>Slider</Nav.Link>
+                        <Nav.Link as={Link} to="/project" onClick={() => setActive("Project")} className={active === "Project" ? "active" : ""}>Project</Nav.Link>
                     </Nav >
 
                     <span className="navbar-text">

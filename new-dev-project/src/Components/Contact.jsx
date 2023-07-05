@@ -52,28 +52,28 @@ const Contact = () => {
                             <h2>Get In Touch</h2>
                             <form action={handleSubmit}>
                                 <Row>
-                                    <Col size={12} ms={6} className="px-1">
+                                    <Col size={12} ms={6} md={3} className="px-1">
                                         <input type="text" value={formDetails.firstName} placeholder="First Name" onChange={(e) => onFormUpdate('fisrtName',e.target.value)}/>
                                     </Col>
-                                    <Col size={12} ms={6} className="px-1">
+                                    <Col size={12} ms={6} md={3} className="px-1">
                                         <input type="text" value={formDetails.lastName} placeholder="Last Name" onChange={(e) => onFormUpdate('lastName',e.target.value)} />
                                     </Col>
-                                    <Col size={12} ms={6} className="px-1">
+                                    <Col size={12} ms={6} md={3} className="px-1">
                                         <input type="text" value={formDetails.email} placeholder="Email" onChange={(e) => onFormUpdate('email',e.target.value)}/>
                                     </Col>
-                                    <Col size={12} ms={6} className="px-1">
+                                    <Col size={12} ms={6} md={3} className="px-1">
                                         <input type="text" value={formDetails.phoneNumber} placeholder="Phone Number" onChange={(e)=>onFormUpdate('number',e.target.value)}/>
                                     </Col>
-                                    <Col size={12} className="px-1">
+                                    <Col size={12}  className="px-1 ">
                                         <textarea  rows="6" value={formDetails.message} name="" id="" cols="30" placeholder="Message"></textarea>
                                         <button  type="submit"><span>{buttonText}</span></button>
                                     </Col>
-                                    {
+                                    {/* {
                                         status.message &&
                                         <Col>
                                             <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                                         </Col>
-                                    }
+                                    } */}
                                 </Row>
                             </form>
                         </Col>
