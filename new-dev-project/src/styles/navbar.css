@@ -27,9 +27,11 @@ nav.navbar{
     z-index: 9999;
     transition:  0.32s ease-in-out;
 }
-.nav-link.navbar-link{
-    color: #fff;
+.nav-link .navbar-link{
+    color: #fff !important;
+
 }
+
 @media (min-width:1700px) {
 	main .container {
 		max-width: 100%;
@@ -134,5 +136,3 @@ nav.navbar .navbar-nav .nav-link.navbar-link {
     width: 100%;
     animation: updown 3s linear infinite;
   }
-
-  
